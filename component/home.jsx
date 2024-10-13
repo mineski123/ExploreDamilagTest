@@ -2,7 +2,7 @@ import React from 'react';
 import { View, Text, StyleSheet, Image, TextInput, ScrollView, TouchableOpacity } from 'react-native';
 import { Ionicons } from '@expo/vector-icons';
 
-const Home = () => {
+const HomeScreen = () => {
   return (
     <View style={styles.container}>
       {/* Header Section */}
@@ -182,4 +182,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default Home;
+export default HomeScreen;

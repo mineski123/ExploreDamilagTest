@@ -54,11 +54,11 @@
               <Text style={styles.description}>{screen.description}</Text>
               {screen.showButton && (
                 <TouchableOpacity
-                  style={styles.button}
-                  onPress={() => navigation.navigate('Home')} 
-                >
-                  <Text style={styles.buttonText}>Proceed</Text>
-                </TouchableOpacity>
+                style={styles.button}
+                onPress={() => navigation.navigate('HomeStack', { screen: 'Home' })}
+              >
+                <Text style={styles.buttonText}>Proceed</Text>
+              </TouchableOpacity>
               )}
             </View>
           ))}
