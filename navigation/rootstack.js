@@ -10,6 +10,7 @@ import LoginScreen from '../component/login'; // LoginScreen import is correct
 import FavoritesScreen from '../component/favorites';
 import Home from '../component/home';
 import WelcomeScreen from '../component/welcomenotes';
+import SignUpScreen from '../component/signup'; // Import SignUpScreen
 
 const { primary, tertiary } = Colors;
 
@@ -39,6 +40,13 @@ const RootStack = () => {
           component={LoginScreen}
           options={{
             headerShown: false, // Hide header for login screen
+          }}
+        />
+        <Stack.Screen
+          name="SignUpScreen"
+          component={SignUpScreen}
+          options={{
+            headerShown: false, // Optional: Hide header for a full-screen experience
           }}
         />
         <Stack.Screen
@@ -91,7 +99,7 @@ const NavBar = () => {
       <Tab.Screen name="Home" component={Home} />
       <Tab.Screen name="Explore" component={ExploreScreen} />
       <Tab.Screen name="Favorites" component={FavoritesScreen} />
-      <Tab.Screen name="MyAccount" component={MyAccountScreen} />
+      <Tab.Screen name="My Account" component={MyAccountScreen} />
     </Tab.Navigator>
   );
 };

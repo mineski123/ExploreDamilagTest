@@ -25,8 +25,10 @@ export default function LoginScreen() {
     };
 
     const handleSignUp = () => {
-        Alert.alert('Sign Up link clicked!');
+        // Navigate to SignUpScreen
+        navigation.navigate('SignUpScreen');
     };
+    
 
     const handleForgotPassword = () => {
         Alert.alert('Forgot Password link clicked!');
